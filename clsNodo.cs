@@ -16,10 +16,10 @@ namespace pryEstructuraDatos
         //propiedades -> como un campo pero que permite codigo dentro
         //get para la lectura
         //set para la escritura
-        public Int32 Cod { get { return cod; } set { cod = value; } }
-        public String Nom { get { return nom; } set { nom = value; } }
-        public String Tram { get { return tram; } set { tram = value; } }
-        public clsNodo Sig { get { return sig; } set { sig = value; } }
+        public Int32 Codigo { get { return cod; } set { cod = value; } }
+        public String Nombre { get { return nom; } set { nom = value; } }
+        public String Tramite { get { return tram; } set { tram = value; } }
+        public clsNodo Siguiente { get { return sig; } set { sig = value; } }
 
     }
 }
