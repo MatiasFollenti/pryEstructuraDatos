@@ -91,7 +91,7 @@ namespace pryEstructuraDatos
         {
             clsNodo Aux = Primero;
 
-            StreamWriter sw = new StreamWriter("Cola.csv", true);
+            StreamWriter sw = new StreamWriter("Cola.csv", false);
             sw.WriteLine("Lista de espera");
             sw.WriteLine("Codigo;Nombre;Tramite");
             while (Aux != null)

@@ -35,10 +35,21 @@ namespace pryEstructuraDatos
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (cola != null)
+            if (cola.Primero != null)
             {
                 lblCodigo.Text = cola.Primero.Codigo.ToString();
                 lblNombre.Text = cola.Primero.Nombre;
+                lblTramite.Text = cola.Primero.Tramite.ToString();
+                cola.EliminarNodo();
+                cola.Recorrer(grillaCola);
+                cola.Recorrer();
+                cola.Recorrer(listaCola);
+            }
+            else
+            {
+                lblCodigo.Text = "";
+                lblNombre.Text = "";
+                lblTramite.Text = "";
             }
         }
     }
