@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listaCola = new System.Windows.Forms.ListBox();
-            this.grillaCola = new System.Windows.Forms.DataGridView();
+            this.listaPila = new System.Windows.Forms.ListBox();
+            this.grillaPila = new System.Windows.Forms.DataGridView();
             this.ColCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,36 +50,36 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.grillaCola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grillaPila)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.gbNuevo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // listaCola
+            // listaPila
             // 
-            this.listaCola.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.listaPila.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.listaCola.FormattingEnabled = true;
-            this.listaCola.Location = new System.Drawing.Point(49, 262);
-            this.listaCola.Name = "listaCola";
-            this.listaCola.Size = new System.Drawing.Size(318, 368);
-            this.listaCola.TabIndex = 10;
+            this.listaPila.FormattingEnabled = true;
+            this.listaPila.Location = new System.Drawing.Point(49, 262);
+            this.listaPila.Name = "listaPila";
+            this.listaPila.Size = new System.Drawing.Size(318, 368);
+            this.listaPila.TabIndex = 10;
             // 
-            // grillaCola
+            // grillaPila
             // 
-            this.grillaCola.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.grillaPila.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grillaCola.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grillaCola.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grillaPila.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grillaPila.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColCodigo,
             this.ColNombre,
             this.ColTramite});
-            this.grillaCola.Location = new System.Drawing.Point(432, 262);
-            this.grillaCola.Name = "grillaCola";
-            this.grillaCola.Size = new System.Drawing.Size(851, 365);
-            this.grillaCola.TabIndex = 9;
+            this.grillaPila.Location = new System.Drawing.Point(432, 262);
+            this.grillaPila.Name = "grillaPila";
+            this.grillaPila.Size = new System.Drawing.Size(851, 365);
+            this.grillaPila.TabIndex = 9;
             // 
             // ColCodigo
             // 
@@ -150,6 +150,7 @@
             this.btnEliminar.TabIndex = 6;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label4
             // 
@@ -212,6 +213,7 @@
             this.btnAgregar.TabIndex = 5;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtNombre
             // 
@@ -257,6 +259,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBox1.Image = global::pryEstructuraDatos.Properties.Resources.Pila_de_datos;
             this.pictureBox1.Location = new System.Drawing.Point(49, 28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(318, 209);
@@ -269,14 +272,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1318, 658);
-            this.Controls.Add(this.listaCola);
-            this.Controls.Add(this.grillaCola);
+            this.Controls.Add(this.listaPila);
+            this.Controls.Add(this.grillaPila);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gbNuevo);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmPila";
             this.Text = "frmPila";
-            ((System.ComponentModel.ISupportInitialize)(this.grillaCola)).EndInit();
+            this.Load += new System.EventHandler(this.frmPila_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grillaPila)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.gbNuevo.ResumeLayout(false);
@@ -288,8 +292,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listaCola;
-        private System.Windows.Forms.DataGridView grillaCola;
+        private System.Windows.Forms.ListBox listaPila;
+        private System.Windows.Forms.DataGridView grillaPila;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColTramite;
