@@ -228,7 +228,7 @@
             this.ColTramite});
             this.grillaCola.Location = new System.Drawing.Point(422, 274);
             this.grillaCola.Name = "grillaCola";
-            this.grillaCola.Size = new System.Drawing.Size(851, 365);
+            this.grillaCola.Size = new System.Drawing.Size(850, 365);
             this.grillaCola.TabIndex = 4;
             // 
             // ColCodigo
@@ -271,7 +271,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1285, 660);
+            this.ClientSize = new System.Drawing.Size(1284, 660);
             this.Controls.Add(this.listaCola);
             this.Controls.Add(this.grillaCola);
             this.Controls.Add(this.groupBox2);

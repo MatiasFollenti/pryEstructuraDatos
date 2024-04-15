@@ -49,6 +49,7 @@
     <Compile Include="clsCola.cs" />
     <Compile Include="clsNodo.cs" />
     <Compile Include="clsPila.cs" />
+    <Compile Include="clsPilaSimple.cs" />
     <Compile Include="frmCola.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +128,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Pila_de_datos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insercion.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listaCola = new System.Windows.Forms.ListBox();
-            this.grillaCola = new System.Windows.Forms.DataGridView();
+            this.listaLs = new System.Windows.Forms.ListBox();
+            this.grillaLista = new System.Windows.Forms.DataGridView();
             this.ColCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,38 +44,38 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.cmbLista = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.grillaCola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grillaLista)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.gbNuevo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // listaCola
+            // listaLs
             // 
-            this.listaCola.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.listaLs.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.listaCola.FormattingEnabled = true;
-            this.listaCola.Location = new System.Drawing.Point(39, 262);
-            this.listaCola.Name = "listaCola";
-            this.listaCola.Size = new System.Drawing.Size(318, 368);
-            this.listaCola.TabIndex = 10;
+            this.listaLs.FormattingEnabled = true;
+            this.listaLs.Location = new System.Drawing.Point(39, 262);
+            this.listaLs.Name = "listaLs";
+            this.listaLs.Size = new System.Drawing.Size(318, 368);
+            this.listaLs.TabIndex = 10;
             // 
-            // grillaCola
+            // grillaLista
             // 
-            this.grillaCola.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.grillaLista.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grillaCola.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grillaCola.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grillaLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grillaLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColCodigo,
             this.ColNombre,
             this.ColTramite});
-            this.grillaCola.Location = new System.Drawing.Point(422, 262);
-            this.grillaCola.Name = "grillaCola";
-            this.grillaCola.Size = new System.Drawing.Size(851, 365);
-            this.grillaCola.TabIndex = 9;
+            this.grillaLista.Location = new System.Drawing.Point(422, 262);
+            this.grillaLista.Name = "grillaLista";
+            this.grillaLista.Size = new System.Drawing.Size(836, 365);
+            this.grillaLista.TabIndex = 9;
             // 
             // ColCodigo
             // 
@@ -94,7 +94,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.listBox1);
+            this.groupBox2.Controls.Add(this.cmbLista);
             this.groupBox2.Controls.Add(this.btnEliminar);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -115,6 +115,7 @@
             this.btnEliminar.TabIndex = 6;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label6
             // 
@@ -159,6 +160,7 @@
             this.btnAgregar.TabIndex = 5;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtNombre
             // 
@@ -201,38 +203,38 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Código:";
             // 
+            // cmbLista
+            // 
+            this.cmbLista.FormattingEnabled = true;
+            this.cmbLista.Location = new System.Drawing.Point(99, 37);
+            this.cmbLista.Name = "cmbLista";
+            this.cmbLista.Size = new System.Drawing.Size(121, 28);
+            this.cmbLista.TabIndex = 13;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 28);
+            this.pictureBox1.Image = global::pryEstructuraDatos.Properties.Resources.insercion;
+            this.pictureBox1.Location = new System.Drawing.Point(39, 28);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(255, 209);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(318, 209);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(86, 35);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(148, 24);
-            this.listBox1.TabIndex = 13;
             // 
             // frmListaSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1299, 659);
-            this.Controls.Add(this.listaCola);
-            this.Controls.Add(this.grillaCola);
+            this.ClientSize = new System.Drawing.Size(1284, 659);
+            this.Controls.Add(this.listaLs);
+            this.Controls.Add(this.grillaLista);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gbNuevo);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmListaSimple";
             this.Text = "frmListaSimple";
-            ((System.ComponentModel.ISupportInitialize)(this.grillaCola)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grillaLista)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.gbNuevo.ResumeLayout(false);
@@ -244,8 +246,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listaCola;
-        private System.Windows.Forms.DataGridView grillaCola;
+        private System.Windows.Forms.ListBox listaLs;
+        private System.Windows.Forms.DataGridView grillaLista;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColTramite;
@@ -261,6 +263,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ComboBox cmbLista;
     }
 }
