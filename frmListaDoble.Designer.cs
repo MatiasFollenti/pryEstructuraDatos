@@ -45,15 +45,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.grillaListaD)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.gbNuevo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // listaLsD
@@ -61,9 +61,9 @@
             this.listaLsD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.listaLsD.FormattingEnabled = true;
-            this.listaLsD.Location = new System.Drawing.Point(114, 254);
+            this.listaLsD.Location = new System.Drawing.Point(16, 254);
             this.listaLsD.Name = "listaLsD";
-            this.listaLsD.Size = new System.Drawing.Size(190, 316);
+            this.listaLsD.Size = new System.Drawing.Size(288, 316);
             this.listaLsD.TabIndex = 15;
             // 
             // grillaListaD
@@ -78,7 +78,7 @@
             this.ColTramite});
             this.grillaListaD.Location = new System.Drawing.Point(359, 254);
             this.grillaListaD.Name = "grillaListaD";
-            this.grillaListaD.Size = new System.Drawing.Size(502, 320);
+            this.grillaListaD.Size = new System.Drawing.Size(829, 320);
             this.grillaListaD.TabIndex = 14;
             // 
             // ColCodigo
@@ -102,7 +102,7 @@
             this.groupBox2.Controls.Add(this.btnEliminar);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(585, 12);
+            this.groupBox2.Location = new System.Drawing.Point(782, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(406, 150);
             this.groupBox2.TabIndex = 13;
@@ -148,7 +148,7 @@
             this.gbNuevo.Controls.Add(this.label2);
             this.gbNuevo.Controls.Add(this.label1);
             this.gbNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbNuevo.Location = new System.Drawing.Point(217, 4);
+            this.gbNuevo.Location = new System.Drawing.Point(449, 12);
             this.gbNuevo.Name = "gbNuevo";
             this.gbNuevo.Size = new System.Drawing.Size(310, 244);
             this.gbNuevo.TabIndex = 12;
@@ -215,56 +215,58 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Código:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Image = global::pryEstructuraDatos.Properties.Resources.insercion;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 152);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(595, 168);
+            this.groupBox1.Location = new System.Drawing.Point(782, 168);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(396, 80);
+            this.groupBox1.Size = new System.Drawing.Size(406, 80);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "ORDENAR";
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(156, 32);
+            this.radioButton2.Location = new System.Drawing.Point(156, 36);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
+            this.radioButton2.Size = new System.Drawing.Size(89, 17);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.Text = "Descendente";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(33, 36);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.Size = new System.Drawing.Size(82, 17);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.Text = "Ascendente";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBox1.Image = global::pryEstructuraDatos.Properties.Resources._0_F7Qnr7Zs_dobles_s_;
+            this.pictureBox1.Location = new System.Drawing.Point(16, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(288, 209);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // frmListaDoble
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1010, 609);
+            this.ClientSize = new System.Drawing.Size(1366, 609);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listaLsD);
             this.Controls.Add(this.grillaListaD);
@@ -278,9 +280,9 @@
             this.groupBox2.PerformLayout();
             this.gbNuevo.ResumeLayout(false);
             this.gbNuevo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

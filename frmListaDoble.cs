@@ -45,10 +45,29 @@ namespace pryEstructuraDatos
             Int32 codigo = Convert.ToInt32(cmbListaD.Text);
             ld.EliminarLD(codigo);
             ld.RecorrerLD();
-            ld.RecorrerLD(grillaListaD);
+           
             ld.RecorrerLD(listaLsD);
             ld.RecorrerLD(cmbListaD);
             cmbListaD.Text = "";
+
+            if (radioButton1.Checked == true)
+            {
+                ld.RecorrerLD(grillaListaD);
+            }
+            else
+            {
+                ld.RecorrerLDdesc(grillaListaD);
+            }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            ld.RecorrerLD(grillaListaD);
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            ld.RecorrerLDdesc(grillaListaD);
         }
     }
 }

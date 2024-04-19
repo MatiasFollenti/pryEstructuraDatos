@@ -139,7 +139,22 @@ namespace pryEstructuraDatos
                 Aux = Aux.Siguiente;
             }
         }
-        public void RecorrerLD(DataGridView grillaListaD) 
+        public void RecorrerLDdesc(DataGridView grillaListaD) 
+        {
+            clsNodo Aux = Ultimo;
+
+            grillaListaD.Rows.Clear();
+
+            while (Aux != null)
+            {
+                grillaListaD.Rows.Add(Aux.Codigo, Aux.Nombre, Aux.Tramite);
+
+                Aux = Aux.Anterior;
+            }
+        }
+
+
+        public void RecorrerLD(DataGridView grillaListaD)
         {
             clsNodo Aux = Primero;
 
@@ -152,8 +167,5 @@ namespace pryEstructuraDatos
                 Aux = Aux.Siguiente;
             }
         }
-
-        
-
     }
 }

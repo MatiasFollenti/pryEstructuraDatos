@@ -63,6 +63,16 @@ namespace pryEstructuraDatos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0_F7Qnr7Zs_dobles_s_ {
+            get {
+                object obj = ResourceManager.GetObject("0-F7Qnr7Zs-dobles-s-", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cf3cb405c86b9520b61af26aca008bd3 {
             get {
                 object obj = ResourceManager.GetObject("cf3cb405c86b9520b61af26aca008bd3", resourceCulture);
