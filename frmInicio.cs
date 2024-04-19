@@ -118,5 +118,29 @@ namespace pryEstructuraDatos
             // Asignar el nuevo formulario como el formulario actual
             formularioActual = frmLista;
         }
+
+        private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Verificar si hay un formulario actualmente abierto
+            if (formularioActual != null)
+            {
+                formularioActual.Close(); // Cerrar el formulario actual si existe
+            }
+
+            // Crear una instancia del nuevo formulario
+            frmListaDoble frmListaDoble = new frmListaDoble();
+
+            // Establecer el formulario secundario como hijo del panel contenedor
+            frmListaDoble.TopLevel = false;
+            frmListaDoble.FormBorderStyle = FormBorderStyle.None;
+            frmListaDoble.Dock = DockStyle.Fill;
+            panelContenedor.Controls.Add(frmListaDoble);
+
+            // Mostrar el formulario secundario
+            frmListaDoble.Show();
+
+            // Asignar el nuevo formulario como el formulario actual
+            formularioActual = frmListaDoble;
+        }
     }
 }
