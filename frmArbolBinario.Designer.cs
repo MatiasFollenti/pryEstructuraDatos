@@ -1,6 +1,6 @@
 ﻿namespace pryEstructuraDatos
 {
-    partial class frmListaDoble
+    partial class frmArbolBinario
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listaLsD = new System.Windows.Forms.ListBox();
             this.grillaListaD = new System.Windows.Forms.DataGridView();
             this.ColCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,26 +44,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.grillaListaD)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.gbNuevo.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // listaLsD
-            // 
-            this.listaLsD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.listaLsD.FormattingEnabled = true;
-            this.listaLsD.Location = new System.Drawing.Point(16, 254);
-            this.listaLsD.Name = "listaLsD";
-            this.listaLsD.Size = new System.Drawing.Size(288, 316);
-            this.listaLsD.TabIndex = 15;
             // 
             // grillaListaD
             // 
@@ -76,10 +67,10 @@
             this.ColCodigo,
             this.ColNombre,
             this.ColTramite});
-            this.grillaListaD.Location = new System.Drawing.Point(359, 254);
+            this.grillaListaD.Location = new System.Drawing.Point(378, 263);
             this.grillaListaD.Name = "grillaListaD";
-            this.grillaListaD.Size = new System.Drawing.Size(747, 320);
-            this.grillaListaD.TabIndex = 14;
+            this.grillaListaD.Size = new System.Drawing.Size(588, 320);
+            this.grillaListaD.TabIndex = 20;
             // 
             // ColCodigo
             // 
@@ -102,10 +93,10 @@
             this.groupBox2.Controls.Add(this.btnEliminar);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(782, 12);
+            this.groupBox2.Location = new System.Drawing.Point(670, 13);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(406, 150);
-            this.groupBox2.TabIndex = 13;
+            this.groupBox2.Size = new System.Drawing.Size(354, 150);
+            this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Eliminar Elemento";
             // 
@@ -127,7 +118,6 @@
             this.btnEliminar.TabIndex = 6;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label6
             // 
@@ -148,10 +138,10 @@
             this.gbNuevo.Controls.Add(this.label2);
             this.gbNuevo.Controls.Add(this.label1);
             this.gbNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbNuevo.Location = new System.Drawing.Point(449, 12);
+            this.gbNuevo.Location = new System.Drawing.Point(337, 13);
             this.gbNuevo.Name = "gbNuevo";
             this.gbNuevo.Size = new System.Drawing.Size(310, 244);
-            this.gbNuevo.TabIndex = 12;
+            this.gbNuevo.TabIndex = 18;
             this.gbNuevo.TabStop = false;
             this.gbNuevo.Text = "Nuevo Elemento";
             // 
@@ -172,7 +162,6 @@
             this.btnAgregar.TabIndex = 5;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtNombre
             // 
@@ -215,66 +204,94 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Código:";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(714, 192);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(252, 39);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Equilibrar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // treeView1
+            // 
+            this.treeView1.Location = new System.Drawing.Point(12, 13);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(272, 309);
+            this.treeView1.TabIndex = 21;
+            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.radioButton4);
+            this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(782, 168);
+            this.groupBox1.Location = new System.Drawing.Point(12, 341);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(406, 80);
-            this.groupBox1.TabIndex = 16;
+            this.groupBox1.Size = new System.Drawing.Size(272, 222);
+            this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "ORDENAR";
+            this.groupBox1.Text = "Listado del arbol";
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(20, 148);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(78, 17);
+            this.radioButton4.TabIndex = 26;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Post- Order";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(20, 111);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(73, 17);
+            this.radioButton3.TabIndex = 25;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Pre- Order";
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(156, 36);
+            this.radioButton2.Location = new System.Drawing.Point(20, 74);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(89, 17);
-            this.radioButton2.TabIndex = 1;
+            this.radioButton2.Size = new System.Drawing.Size(95, 17);
+            this.radioButton2.TabIndex = 24;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Descendente";
+            this.radioButton2.Text = "In Order DESC";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(33, 36);
+            this.radioButton1.Location = new System.Drawing.Point(20, 37);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(82, 17);
-            this.radioButton1.TabIndex = 0;
+            this.radioButton1.Size = new System.Drawing.Size(87, 17);
+            this.radioButton1.TabIndex = 23;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Ascendente";
+            this.radioButton1.Text = "In Order ASC";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Image = global::pryEstructuraDatos.Properties.Resources._0_F7Qnr7Zs_dobles_s_;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(288, 209);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // frmListaDoble
+            // frmArbolBinario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 609);
+            this.ClientSize = new System.Drawing.Size(1093, 589);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.listaLsD);
+            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.grillaListaD);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gbNuevo);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "frmListaDoble";
-            this.Text = "frmListaDoble";
+            this.Name = "frmArbolBinario";
+            this.Text = "frmArbolBinario";
             ((System.ComponentModel.ISupportInitialize)(this.grillaListaD)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -282,14 +299,12 @@
             this.gbNuevo.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox listaLsD;
         private System.Windows.Forms.DataGridView grillaListaD;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColNombre;
@@ -300,14 +315,17 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox gbNuevo;
         private System.Windows.Forms.TextBox txtTramite;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
     }

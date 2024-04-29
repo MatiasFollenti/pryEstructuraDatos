@@ -14,6 +14,8 @@ namespace pryEstructuraDatos
         private String tram;
         private clsNodo sig;
         private clsNodo ant;
+        private clsNodo der;
+        private clsNodo izq;
         //propiedades -> como un campo pero que permite codigo dentro
         //get para la lectura
         //set para la escritura
@@ -22,5 +24,7 @@ namespace pryEstructuraDatos
         public String Tramite { get { return tram; } set { tram = value; } }
         public clsNodo Siguiente { get { return sig; } set { sig = value; } }
         public clsNodo Anterior { get { return ant; } set { ant = value; } }
+        public clsNodo Izquierdo { get { return ant; } set { ant = value; } }
+        public clsNodo Derecho { get {  return sig; } set { sig = value;} }
     }
 }
