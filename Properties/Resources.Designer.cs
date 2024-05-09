@@ -73,6 +73,16 @@ namespace pryEstructuraDatos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _6588c3c8f110ca478a8d1ce6 {
+            get {
+                object obj = ResourceManager.GetObject("6588c3c8f110ca478a8d1ce6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cf3cb405c86b9520b61af26aca008bd3 {
             get {
                 object obj = ResourceManager.GetObject("cf3cb405c86b9520b61af26aca008bd3", resourceCulture);
@@ -93,6 +103,16 @@ namespace pryEstructuraDatos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ed_transformed {
+            get {
+                object obj = ResourceManager.GetObject("ed-transformed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap insercion {
             get {
                 object obj = ResourceManager.GetObject("insercion", resourceCulture);
@@ -106,6 +126,16 @@ namespace pryEstructuraDatos.Properties {
         internal static System.Drawing.Bitmap Pila_de_datos {
             get {
                 object obj = ResourceManager.GetObject("Pila_de_datos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2023_10_08_at_19_23_06 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2023-10-08 at 19.23.06", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

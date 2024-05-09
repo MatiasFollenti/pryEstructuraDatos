@@ -118,19 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Pila_de_datos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pila_de_datos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0-F7Qnr7Zs-dobles-s-" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0-F7Qnr7Zs-dobles-s-.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insercion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insercion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6588c3c8f110ca478a8d1ce6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6588c3c8f110ca478a8d1ce6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cola" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cola.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cf3cb405c86b9520b61af26aca008bd3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cf3cb405c86b9520b61af26aca008bd3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Pila_de_datos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pila_de_datos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WhatsApp Image 2023-10-08 at 19.23.06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2023-10-08 at 19.23.06.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="insercion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\insercion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="0-F7Qnr7Zs-dobles-s-" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\0-F7Qnr7Zs-dobles-s-.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ed-transformed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ed-transformed.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

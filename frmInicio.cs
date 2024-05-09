@@ -142,5 +142,29 @@ namespace pryEstructuraDatos
             // Asignar el nuevo formulario como el formulario actual
             formularioActual = frmListaDoble;
         }
+
+        private void arbolBinarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Verificar si hay un formulario actualmente abierto
+            if (formularioActual != null)
+            {
+                formularioActual.Close(); // Cerrar el formulario actual si existe
+            }
+
+            // Crear una instancia del nuevo formulario
+            frmArbolBinario frmArbolBinario = new frmArbolBinario();
+
+            // Establecer el formulario secundario como hijo del panel contenedor
+            frmArbolBinario.TopLevel = false;
+            frmArbolBinario.FormBorderStyle = FormBorderStyle.None;
+            frmArbolBinario.Dock = DockStyle.Fill;
+            panelContenedor.Controls.Add(frmArbolBinario);
+
+            // Mostrar el formulario secundario
+            frmArbolBinario.Show();
+
+            // Asignar el nuevo formulario como el formulario actual
+            formularioActual = frmArbolBinario;
+        }
     }
 }

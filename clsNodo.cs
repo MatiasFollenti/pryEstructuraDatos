@@ -14,8 +14,7 @@ namespace pryEstructuraDatos
         private String tram;
         private clsNodo sig;
         private clsNodo ant;
-        private clsNodo der;
-        private clsNodo izq;
+        
         //propiedades -> como un campo pero que permite codigo dentro
         //get para la lectura
         //set para la escritura
