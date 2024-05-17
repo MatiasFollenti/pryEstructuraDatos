@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsArbolBinario.cs" />
+    <Compile Include="clsBaseDatos.cs" />
     <Compile Include="clsCola.cs" />
     <Compile Include="clsListaDoble.cs" />
     <Compile Include="clsNodo.cs" />
@@ -58,11 +59,23 @@
     <Compile Include="frmArbolBinario.Designer.cs">
       <DependentUpon>frmArbolBinario.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBDOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBDOperaciones.Designer.cs">
+      <DependentUpon>frmBDOperaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCola.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCola.Designer.cs">
       <DependentUpon>frmCola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultasBD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultasBD.Designer.cs">
+      <DependentUpon>frmConsultasBD.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDatosdelDesarrollador.cs">
       <SubType>Form</SubType>
@@ -94,13 +107,25 @@
     <Compile Include="frmPila.Designer.cs">
       <DependentUpon>frmPila.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRepasoOp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRepasoOp.Designer.cs">
+      <DependentUpon>frmRepasoOp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmArbolBinario.resx">
       <DependentUpon>frmArbolBinario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBDOperaciones.resx">
+      <DependentUpon>frmBDOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCola.resx">
       <DependentUpon>frmCola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultasBD.resx">
+      <DependentUpon>frmConsultasBD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDatosdelDesarrollador.resx">
       <DependentUpon>frmDatosdelDesarrollador.cs</DependentUpon>
@@ -116,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPila.resx">
       <DependentUpon>frmPila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRepasoOp.resx">
+      <DependentUpon>frmRepasoOp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

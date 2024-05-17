@@ -166,5 +166,29 @@ namespace pryEstructuraDatos
             // Asignar el nuevo formulario como el formulario actual
             formularioActual = frmArbolBinario;
         }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Verificar si hay un formulario actualmente abierto
+            if (formularioActual != null)
+            {
+                formularioActual.Close(); // Cerrar el formulario actual si existe
+            }
+
+            // Crear una instancia del nuevo formulario
+            frmConsultasBD frmConsultasBD = new frmConsultasBD();
+
+            // Establecer el formulario secundario como hijo del panel contenedor
+            frmConsultasBD.TopLevel = false;
+            frmConsultasBD.FormBorderStyle = FormBorderStyle.None;
+            frmConsultasBD.Dock = DockStyle.Fill;
+            panelContenedor.Controls.Add(frmConsultasBD);
+
+            // Mostrar el formulario secundario
+            frmConsultasBD.Show();
+
+            // Asignar el nuevo formulario como el formulario actual
+            formularioActual = frmConsultasBD;
+        }
     }
 }
