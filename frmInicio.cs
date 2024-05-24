@@ -190,5 +190,53 @@ namespace pryEstructuraDatos
             // Asignar el nuevo formulario como el formulario actual
             formularioActual = frmConsultasBD;
         }
+
+        private void operacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Verificar si hay un formulario actualmente abierto
+            if (formularioActual != null)
+            {
+                formularioActual.Close(); // Cerrar el formulario actual si existe
+            }
+
+            // Crear una instancia del nuevo formulario
+            frmBDOperaciones frmBDOperaciones = new frmBDOperaciones();
+
+            // Establecer el formulario secundario como hijo del panel contenedor
+            frmBDOperaciones.TopLevel = false;
+            frmBDOperaciones.FormBorderStyle = FormBorderStyle.None;
+            frmBDOperaciones.Dock = DockStyle.Fill;
+            panelContenedor.Controls.Add(frmBDOperaciones);
+
+            // Mostrar el formulario secundario
+            frmBDOperaciones.Show();
+
+            // Asignar el nuevo formulario como el formulario actual
+            formularioActual = frmBDOperaciones;
+        }
+
+        private void repasoOperacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Verificar si hay un formulario actualmente abierto
+            if (formularioActual != null)
+            {
+                formularioActual.Close(); // Cerrar el formulario actual si existe
+            }
+
+            // Crear una instancia del nuevo formulario
+            frmRepasoOp frmRepasoOp = new frmRepasoOp();
+
+            // Establecer el formulario secundario como hijo del panel contenedor
+            frmRepasoOp.TopLevel = false;
+            frmRepasoOp.FormBorderStyle = FormBorderStyle.None;
+            frmRepasoOp.Dock = DockStyle.Fill;
+            panelContenedor.Controls.Add(frmRepasoOp);
+
+            // Mostrar el formulario secundario
+            frmRepasoOp.Show();
+
+            // Asignar el nuevo formulario como el formulario actual
+            formularioActual = frmRepasoOp;
+        }
     }
 }

@@ -68,6 +68,7 @@
             this.btnSeleccionPorConvolucion.TabIndex = 2;
             this.btnSeleccionPorConvolucion.Text = "Selección por convolución";
             this.btnSeleccionPorConvolucion.UseVisualStyleBackColor = true;
+            this.btnSeleccionPorConvolucion.Click += new System.EventHandler(this.btnSeleccionPorConvolucion_Click);
             // 
             // btnSeleccionMultiatributo
             // 
@@ -78,6 +79,7 @@
             this.btnSeleccionMultiatributo.TabIndex = 1;
             this.btnSeleccionMultiatributo.Text = "Selección multiatributo";
             this.btnSeleccionMultiatributo.UseVisualStyleBackColor = true;
+            this.btnSeleccionMultiatributo.Click += new System.EventHandler(this.btnSeleccionMultiatributo_Click);
             // 
             // btnSeleccionSimple
             // 
@@ -88,6 +90,7 @@
             this.btnSeleccionSimple.TabIndex = 0;
             this.btnSeleccionSimple.Text = "Selección simple";
             this.btnSeleccionSimple.UseVisualStyleBackColor = true;
+            this.btnSeleccionSimple.Click += new System.EventHandler(this.btnSeleccionSimple_Click);
             // 
             // groupBox3
             // 
@@ -110,6 +113,7 @@
             this.btnDiferencia.TabIndex = 2;
             this.btnDiferencia.Text = "Diferencia";
             this.btnDiferencia.UseVisualStyleBackColor = true;
+            this.btnDiferencia.Click += new System.EventHandler(this.btnDiferencia_Click);
             // 
             // btnInterseccion
             // 
@@ -120,6 +124,7 @@
             this.btnInterseccion.TabIndex = 1;
             this.btnInterseccion.Text = "Intersección";
             this.btnInterseccion.UseVisualStyleBackColor = true;
+            this.btnInterseccion.Click += new System.EventHandler(this.btnInterseccion_Click);
             // 
             // btnUnion
             // 
@@ -130,6 +135,7 @@
             this.btnUnion.TabIndex = 0;
             this.btnUnion.Text = "Unión";
             this.btnUnion.UseVisualStyleBackColor = true;
+            this.btnUnion.Click += new System.EventHandler(this.btnUnion_Click);
             // 
             // groupBox1
             // 
@@ -152,6 +158,7 @@
             this.btnJuntar.TabIndex = 2;
             this.btnJuntar.Text = "Juntar";
             this.btnJuntar.UseVisualStyleBackColor = true;
+            this.btnJuntar.Click += new System.EventHandler(this.btnJuntar_Click);
             // 
             // btnProyeccionMultiatributo
             // 
@@ -162,6 +169,7 @@
             this.btnProyeccionMultiatributo.TabIndex = 1;
             this.btnProyeccionMultiatributo.Text = "Proyección multiatributo";
             this.btnProyeccionMultiatributo.UseVisualStyleBackColor = true;
+            this.btnProyeccionMultiatributo.Click += new System.EventHandler(this.btnProyeccionMultiatributo_Click);
             // 
             // btnProyeccionSimple
             // 
@@ -172,6 +180,7 @@
             this.btnProyeccionSimple.TabIndex = 0;
             this.btnProyeccionSimple.Text = "Proyección simple";
             this.btnProyeccionSimple.UseVisualStyleBackColor = true;
+            this.btnProyeccionSimple.Click += new System.EventHandler(this.btnProyeccionSimple_Click);
             // 
             // dgvBaseDatosOperaciones
             // 
@@ -190,6 +199,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvBaseDatosOperaciones);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmBDOperaciones";
             this.Text = "frmBD";
             this.groupBox2.ResumeLayout(false);

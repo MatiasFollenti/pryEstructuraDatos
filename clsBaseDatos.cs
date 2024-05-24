@@ -17,7 +17,7 @@ namespace pryEstructuraDatos
         
         private string varCadenaConexion1 = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=..//..//Resources//Libreria.mdb";
 
-        //private string varCadenaConexion2 = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Libreria.mdb";
+        private string varCadenaConexion2 = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Libreria.mdb";
         public void Listar(DataGridView dgv) 
         {
             DataTable dt = new DataTable();
@@ -48,6 +48,7 @@ namespace pryEstructuraDatos
             {
                 conn.ConnectionString = varCadenaConexion1;
                 conn.Open();
+                cmd = new OleDbCommand();
                 cmd.Connection = conn;
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = query;
