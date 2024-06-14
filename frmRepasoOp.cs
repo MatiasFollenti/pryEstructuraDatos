@@ -81,36 +81,36 @@ namespace pryEstructuraDatos
                     lblListar.Text = "selecciona libros donde cantidad es mayor a 5 y precio menor a 300";
                     break;
                 case 12:
-                    querySQL = "";
-                    lblListar.Text = "";
+                    querySQL = "select idlibro, titulo, idautor, precio from libro order by precio desc";
+                    lblListar.Text = "Ordena los libros de mayor a menor segun el precio";
                     break;
                 case 13:
-                    querySQL = "";
-                    lblListar.Text = "";
+                    querySQL = "select idlibro, titulo, idautor, precio, cantidad from libro order by cantidad asc";
+                    lblListar.Text = "Ordena los libros de menor a mayor segun su cantidad";
                     break;
                 case 14:
-                    querySQL = "";
-                    lblListar.Text = "";
+                    querySQL = "select titulo from libro";
+                    lblListar.Text = "Muestra los nombres de los libros";
                     break;
                 case 15:
-                    querySQL = "";
-                    lblListar.Text = "";
+                    querySQL = "select idlibro from libro";
+                    lblListar.Text = "Muestra los libros registrados";
                     break;
                 case 16:
-                    querySQL = "";
-                    lblListar.Text = "";
+                    querySQL = "select titulo,precio,cantidad from libro";
+                    lblListar.Text = "Muestra el nombre, el precio y la cantidad del libro";
                     break;
                 case 17:
-                    querySQL = "";
-                    lblListar.Text = "";
+                    querySQL = "select idlibro,titulo,año from libro";
+                    lblListar.Text = "Muestra el cod. de indentificacion del libro, ademas de el nombre y el año en el que salió";
                     break;
                 case 18:
-                    querySQL = "";
-                    lblListar.Text = "";
+                    querySQL = "SELECT * FROM Libro, Autor WHERE LIBRO.IDAUTOR = AUTOR.IDAUTOR";
+                    lblListar.Text = "Muestra el ID de cada autor de cada libro";
                     break;
                 case 19:
-                    querySQL = "";
-                    lblListar.Text = "";
+                    querySQL = "select * from libro, idioma where libro.ididioma = idioma.ididioma";
+                    lblListar.Text = "Muestra el idioma de cada libro segun sus ID";
                     break;
 
             }
